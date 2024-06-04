@@ -7,7 +7,7 @@
 
 .navbar ul{
     list-style-type: none;
-    background-color: #648550;
+    background-color: black;
     padding:0px;
     margin: 0px;
     display:flex;
@@ -16,7 +16,7 @@
 }
 
 .navbar a{
-    color: black;
+    color: white;
     text-decoration: none;
     padding: 10px;
     display: block;
@@ -28,9 +28,7 @@
 }
 
 .navbar a:hover{
-    background-color: #C2C8A0;
-    margin-right: 20px;
-    margin-left: 20px;
+    background-color: pink;
 
 }
 
