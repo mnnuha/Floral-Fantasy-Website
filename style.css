@@ -4,31 +4,53 @@
     box-sizing:border-box;
 }
 
+
 .navbar ul{
     list-style-type: none;
-    background-color: black;
+    background-color: #648550;
     padding:0px;
     margin: 0px;
-    overflow: hidden;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .navbar a{
-    color: white;
+    color: black;
     text-decoration: none;
-    padding: 15px;
+    padding: 10px;
     display: block;
     text-align: center;
+    font-family: lora;
+    font-weight: bold;
+    font-size: 30px;
  
 }
 
 .navbar a:hover{
-    background-color: pink;
+    background-color: #C2C8A0;
+    margin-right: 20px;
+    margin-left: 20px;
 
 }
 
 .navbar li{
-    float: left;
+    flex:1;
+    text-align: center;
 
+}
+
+.navbar li.logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0;
+}
+
+#logo{
+
+    width:120px;
+    height:120px;
 }
 
 .heroimage{
@@ -46,7 +68,7 @@
 .story-container{
     display: flex;
     align-items: center;
-    background-color: #CEC8C5;
+    background-color: #FAF3D7;
     font-size: 20px;
 }
 
@@ -65,12 +87,60 @@
 
 .story-text h1{
    
-    font-family: "Sofia", cursive;
-    font-weight: 400;
-    font-style: normal;
+    font-family: merienda;
+    font-size:40px; 
+
       
 }
 
 .story-text p{
-   
+
+    font-family: dancing-script;
 }
+
+
+/*Services section of the flower shop*/
+.card-container{
+    display:flex;
+    justify-content: center;
+    background-color:#EBD7D0;
+}
+
+.services-container h1{
+    font-family:merienda;
+    font-size: 20px;
+    padding:20px;
+    background-color: #EBD7D0;
+    display:flex;
+    justify-content: center;
+     
+}
+
+.service-card h2{
+    font-size: 20px;;
+}
+
+.service-card{
+    border: #610606 5px solid; 
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    width: 300px;
+    padding:10px; 
+    margin:10px 10px 10px 10px; 
+}
+
+.service-card img{
+    padding: 40px 0px;
+    width: 200px;
+}    
+
+.service-card p{
+    /* border: #010101 solid 3px; */
+    margin: 5px 5px;
+    font-family: 'Gabriela', serif;
+    font-size: 10px;
+}    
