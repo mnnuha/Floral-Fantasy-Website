@@ -7,8 +7,8 @@
 
 .navbar ul{
     list-style-type: none;
-    background-color: black;
-    padding:0px;
+    background-color: #648550;
+    padding:px;
     margin: 0px;
     display:flex;
     align-items: center;
@@ -16,7 +16,7 @@
 }
 
 .navbar a{
-    color: white;
+    color: black;
     text-decoration: none;
     padding: 10px;
     display: block;
@@ -28,8 +28,8 @@
 }
 
 .navbar a:hover{
-    background-color: pink;
-
+    background-color: #C2C8A0;
+    margin: 20px 20px;
 }
 
 .navbar li{
@@ -106,7 +106,7 @@
 
 .services-container h1{
     font-family:merienda;
-    font-size: 20px;
+    font-size: 40px;
     padding:20px;
     background-color: #EBD7D0;
     display:flex;
@@ -115,7 +115,10 @@
 }
 
 .service-card h2{
-    font-size: 20px;;
+    font-family: dancing-script;    
+    margin: 30px 30px 30px 30px;
+    padding-top:10px;
+    font-size: 30px;
 }
 
 .service-card{
@@ -125,20 +128,22 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 450px;
-    width: 300px;
+    height: 550px;
+    width: 350px;
     padding:10px; 
-    margin:10px 10px 10px 10px; 
+    margin:20px 30px 20px 30px; 
 }
 
 .service-card img{
-    padding: 40px 0px;
+    padding: 0px 5px 0px 5px;
     width: 200px;
+    height:auto;
 }    
 
 .service-card p{
     /* border: #010101 solid 3px; */
     margin: 5px 5px;
-    font-family: 'Gabriela', serif;
-    font-size: 10px;
+    padding-top: 20px;
+    font-family: dancing-script;
+    font-size: 15px;
 }    
