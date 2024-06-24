@@ -1,4 +1,4 @@
-*{
+/* *{
     padding:0;
     margin:0;
     box-sizing:border-box;
@@ -97,8 +97,8 @@
 }
 
 
-/*Services section of the flower shop*/
-.card-container{
+/* Services section of the flower shop*/
+/* .card-container{
     display:flex;
     justify-content: center;
     background-color:#EBD7D0;
@@ -132,9 +132,9 @@
     width: 350px;
     padding:10px; 
     margin:20px 30px 20px 30px; 
-}
+} */
 
-.service-card img{
+/* .service-card img{
     padding: 0px 5px 0px 5px;
     width: 200px;
     height:auto;
@@ -142,8 +142,52 @@
 
 .service-card p{
     /* border: #010101 solid 3px; */
-    margin: 5px 5px;
+    /* margin: 5px 5px;
     padding-top: 20px;
     font-family: dancing-script;
     font-size: 15px;
-}    
+}     */ 
+
+:root{
+    --pink:#c09f9a; 
+}
+
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+header{
+    position: fixed;
+    top:0; left:0; right:0;
+    background:#f3f0eb;
+    padding:2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
+}
+
+header .logo{
+    font-size: 3rem;
+    color: #9f6564;
+    font-weight: bolder;
+}
+
+header .logo span{
+    color:var(--pink);
+}
+
