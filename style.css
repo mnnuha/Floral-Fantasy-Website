@@ -148,6 +148,21 @@
     font-size: 15px;
 }     */ 
 
+/*media queries*/
+@media (max-width:991px) {
+    html{
+        font-size: 55%;      
+    }   
+    
+    header{
+       padding:2rem; 
+    }
+}
+
+@media (max-width:768px) {
+
+    
+}
 :root{
     --pink:#c09f9a; 
 }
@@ -169,6 +184,27 @@ html{
     overflow-x: hidden;
 }
 
+section{
+    padding:2rem 9%;
+}
+
+/*Shop Now button in the hero image*/
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #9f6564;
+    color: black;
+    padding: 1.5rem 2rem;
+    cursor: pointer;
+    font-size: 15px;
+   
+}
+
+.btn:hover{
+    background: #c09f9a;
+}
 header{
     position: fixed;
     top:0; left:0; right:0;
@@ -191,3 +227,33 @@ header .logo span{
     color:var(--pink);
 }
 
+
+
+.hero-image{
+    display:flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(assets/heroimage.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-image .content{
+    max-width: 50rem;
+    
+}
+
+.hero-image .content span{
+    font-size: 15px;
+    color: rgb(33, 0, 0);
+    padding:1rem 0;
+    line-height: 1.5;
+}
+
+.hero-image .content p{
+    font-size: 15px;
+    color: rgb(33, 0, 0);
+    padding:1rem 0;
+    line-height: 1.5;
+}
