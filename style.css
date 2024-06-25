@@ -164,7 +164,7 @@
     
 }
 :root{
-    --pink:#c09f9a; 
+    --pink:#ff009d; 
 }
 
 *{
@@ -208,7 +208,7 @@ section{
 header{
     position: fixed;
     top:0; left:0; right:0;
-    background:#f3f0eb;
+    background:#fff;
     padding:2rem 9%;
     display: flex;
     align-items: center;
@@ -219,7 +219,7 @@ header{
 
 header .logo{
     font-size: 3rem;
-    color: #9f6564;
+    color: #333;
     font-weight: bolder;
 }
 
@@ -227,7 +227,124 @@ header .logo span{
     color:var(--pink);
 }
 
+header .navigation-bar a{
+    font-size: 2rem;
+    padding:0 1.5rem;
+    color: #666;
+}
 
+header .navigation-bar a:hover{
+    color:var(--pink);
+}
+
+header .icons a{
+    font-size: 2rem;
+    color:#333;
+    margin-left: 1.5rem;
+}
+
+header .icons a:hover{
+    color:var(--pink);
+}
+
+header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    cursor: pointer;
+    border:.1rem solid rgba(0,0,0,.3);
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding:2rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+    header .fa-bars{
+        display:block;
+    }
+
+    header .navigation-bar{
+        position:absolute;
+        top:100%; left: 0; right: 0;
+        background: #eee;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked~.navigation-bar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navigation-bar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff;
+        border: 1rem solid rgba(0,0,0,.1);
+        display: block;
+    }
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    } 
+}
 
 .hero-image{
     display:flex;
