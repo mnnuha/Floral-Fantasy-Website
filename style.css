@@ -185,7 +185,7 @@ section{
     color: black;
     padding: 1.5rem 2rem;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 25px;
    
 }
 
@@ -260,18 +260,19 @@ header .fa-bars{
 
 .hero-image .content{
     max-width: 50rem;
+   
     
 }
 
 .hero-image .content span{
-    font-size: 15px;
+    font-size: 30px;
     color: rgb(255, 255, 255);
     padding:1rem 0;
     line-height: 1.5;
 }
 
 .hero-image .content p{
-    font-size: 15px;
+    font-size: 25px;
     color: rgb(255, 255, 255);
     padding:1rem 0;
     line-height: 1.5;
@@ -304,87 +305,14 @@ header .fa-bars{
         padding:2rem;
     }
 
-}
-
-@media (max-width:768px){
-
-    header .fa-bars{
-        display:block;
-    }
-
-    header .navigation-bar{
-        position:absolute;
-        top:100%; left: 0; right: 0;
-        background: #eee;
-        border-top: .1rem solid rgba(0,0,0,.1);
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
-
-    header #toggler:checked~.navigation-bar{
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    }
-
-    header .navigation-bar a{
-        margin: 1.5rem;
-        padding: 1.5rem;
-        background: #fff;
-        border: 1rem solid rgba(0,0,0,.1);
-        display: block;
-    }
-
-}
-
-@media (max-width:450px){
-
-    html{
-        font-size: 50%;
-    } 
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width:991px){
-
-    html{
-        font-size: 55%;
-    }
-
-    header{
+    section{
         padding:2rem;
     }
 
+    .hero-image{
+        background-position: left;
+    }
+
 }
 
 @media (max-width:768px){
@@ -411,8 +339,16 @@ header .fa-bars{
         background: #fff;
         border: 1rem solid rgba(0,0,0,.1);
         display: block;
+         
     }
 
+    .hero-image .content span{
+        font-size: 2.5rem;
+    }
+
+    .hero-image .content p{
+        font-size: 2rem;
+    }
 }
 
 @media (max-width:450px){
@@ -420,33 +356,4 @@ header .fa-bars{
     html{
         font-size: 50%;
     } 
-}
-
-.hero-image{
-    display:flex;
-    align-items: center;
-    min-height: 100vh;
-    background: url(assets/heroimage.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.hero-image .content{
-    max-width: 50rem;
-    
-}
-
-.hero-image .content span{
-    font-size: 15px;
-    color: rgb(33, 0, 0);
-    padding:1rem 0;
-    line-height: 1.5;
-}
-
-.hero-image .content p{
-    font-size: 15px;
-    color: rgb(33, 0, 0);
-    padding:1rem 0;
-    line-height: 1.5;
 }
