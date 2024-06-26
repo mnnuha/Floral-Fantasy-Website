@@ -151,7 +151,7 @@
 
 
 :root{
-    --pink:#ff009d; 
+    --pink:#e9a4ce; 
 }
 
 *{
@@ -173,6 +173,19 @@ html{
 
 section{
     padding:2rem 9%;
+}
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: rgba(225, 51, 153, .05);
+}
+
+.heading span{
+    color: var(--pink);
 }
 
 /*Shop Now button in the hero image*/
@@ -278,6 +291,16 @@ header .fa-bars{
     line-height: 1.5;
 }
 
+.our-story .row{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+}
+
+
 
 
 
@@ -356,4 +379,8 @@ header .fa-bars{
     html{
         font-size: 50%;
     } 
+
+    .heading{
+        font-size: 3rem;
+    }
 }
