@@ -157,7 +157,7 @@
 *{
     margin:0; padding:0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Times New Roman', Times, serif;
     outline: none; border: none;
     text-decoration: none;
     text-transform: capitalize;
@@ -215,7 +215,7 @@ header .logo span{
 }
 
 header .navigation-bar a{
-    font-size: 2rem;
+    font-size: 3rem;
     padding:0 1.5rem;
     color: #666;
 }
