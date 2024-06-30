@@ -196,9 +196,9 @@ section{
     border-radius: 5rem;
     background: #9f6564;
     color: black;
-    padding: 1.5rem 2rem;
+    padding: .9rem 3.5rem;
     cursor: pointer;
-    font-size: 25px;
+    font-size: 1.7rem;
    
 }
 
@@ -315,15 +315,56 @@ header .fa-bars{
     z-index: 2;
 }
 
-.our-story .row{
+.story .row{
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap:2rem;
     flex-wrap: wrap;
-    padding: 2rem 0;
-    padding-bottom: 3rem;
+    padding:2rem 0;
+    padding-bottom:3rem;
 }
 
+.story .row .videos{
+    flex:1 1 40rem;
+    position: relative;
+}
+
+.story .row .videos video{
+    width:100%;
+    border:1.5rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
+    height: 100%;
+    object-fit: cover;
+}
+
+.story .row .videos h3{
+    position: absolute;
+    top: 50%; transform: translateY(-50%);
+    font-size: 3rem;
+    background: #fff;
+    width: 100%;
+    padding:1rem 2rem;
+    text-align: center;
+    mix-blend-mode: screen;
+}
+
+.story .row .content{
+    flex:1 1 40rem;
+}
+
+.story .row .content h3{
+    font-size: 3rem;
+    color: #333;
+}
+
+.story .row .content p{
+    font-size: 1.5rem;
+    color: #999;
+    padding: .5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
 
 
 
