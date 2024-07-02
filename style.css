@@ -179,7 +179,7 @@ section{
     text-align: center;
     font-size: 4rem;
     color: #333;
-    padding: 1rem;
+    padding: 0.5rem;
     margin: 2rem 0;
     background: rgba(225, 51, 153, .05);
 }
@@ -198,7 +198,7 @@ section{
     color: black;
     padding: .9rem 3.5rem;
     cursor: pointer;
-    font-size: 1.7rem;
+    font-size: 2rem;
    
 }
 
@@ -264,15 +264,15 @@ header .fa-bars{
 .hero-image{
     display:flex;
     align-items: center;
-    justify-content: flex-start;
     margin-top: 5rem;
     margin-bottom: 5rem;
-    min-height: 100vh;
+    min-height: 80vh;
     background: url(assets/heroimage.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    
 }
 
 .hero-image .overlay{
@@ -283,36 +283,56 @@ header .fa-bars{
     height: 100%;
     opacity: 0.5;
     z-index: 1; 
+    padding: 2rem;
+    
 }
 
 .hero-image .content{
     position: relative;
     z-index: 2;
-    max-width: 50rem;
-    text-align: center;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: rgba(0,0,0,0.5);
     padding:2rem;
     border-radius: 10px;
     
 }
+.hero-image .Title{
+    flex: 1;
+    text-align:center;
+}
 
-.hero-image .content span{
-    font-size: 30px;
+.hero-image .Title h1{
+    font-size: 10rem;
+    color:white;
+    font-family:'Playfair Display', serif;
+    font-weight: 700px;
+    margin-bottom: 1rem;
+}
+
+.hero-image .text{
+    flex:1;
+    text-align:left;
+    padding-left: 2rem;
+}
+
+.hero-image .text span{
+    font-size: 2.5rem;
     color: rgb(255, 255, 255);
     padding:1rem 0;
     line-height: 1.5;
-    position: relative;
-    z-index: 2;
+       
 }
 
 
-.hero-image .content p{
+.hero-image .text p{
     font-size: 25px;
     color: rgb(255, 255, 255);
     padding:1rem 0;
     line-height: 1.5;
-    position: relative;
-    z-index: 2;
+      
 }
 
 .story .row{
@@ -471,9 +491,6 @@ header .fa-bars{
     text-decoration: line-through;
 }
 
-/* Services section of the flower shop*/
-
-
 
 
 
@@ -544,13 +561,17 @@ header .fa-bars{
          
     }
 
-    .hero-image .content span{
+    /*.hero-image .title h1{
+        font-size: 50rem;
+    }
+
+    .hero-image .text span{
         font-size: 2.5rem;
     }
 
-    .hero-image .content p{
+    .hero-image .text p{
         font-size: 2rem;
-    }
+    }*/
 }
 
 @media (max-width:450px){
