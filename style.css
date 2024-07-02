@@ -194,7 +194,7 @@ section{
     display: inline-block;
     margin-top: 1rem;
     border-radius: 5rem;
-    background: #9f6564;
+    background: #f3e1e1;
     color: black;
     padding: .9rem 3.5rem;
     cursor: pointer;
@@ -494,6 +494,105 @@ header .fa-bars{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+.services .box-container{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.services .box-container .box{
+    flex:1 1 30rem;
+    box-shadow: 0.5rem 1.5rem rgba(0,0,0,0.05);
+    border-radius: 3rem;
+    border:1px solid rgba(0,0,0,0.1);
+    position:relative;
+}
+
+.services .box-container .box .discount{
+    position: absolute;
+    top:1rem; left:1rem;
+    padding:.7rem 1rem;
+    font-size: 2rem;
+    color:var(--pink);
+    background: rgba(255,51,153,.05);
+    z-index: 1;
+    border-radius: 0.5rem;
+}
+
+.services .box-container .box .image{
+    position:relative;
+    text-align: center;
+    padding-top:4rem;
+    padding-right:0.5rem;
+    padding-left:0.5rem;
+    overflow:hidden;
+}
+
+.services .box-container .box .image img{
+    height:25rem;
+    transition:transform 0.3s ease;
+    transform: scale(1);
+    
+}
+
+.services .box-container .box:hover .image img{
+    transform: scale(1.1);
+
+}
+
+.services .box-container .box .image .icons{
+    position:absolute;
+    bottom:-7rem; left:0; right:0;
+    display: flex;
+    transition:bottom 0.3s ease;
+}
+
+.services .box-container .box:hover .image .icons{
+    bottom:0;
+
+}
+
+.services .box-container .box .image .icons a{
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    width: 50%;
+    background:#9f6564;
+    color:#f3f0eb;
+    text-align:center;
+    transition: backgorund 0.3s ease;
+}
+
+.services .box-container .box .image .icons .cart-btn{
+    border-left: 0.1rem solid #f3f0eb;
+    border-right: 0.1rem solid #f3f0eb;
+    width:100%;
+}
+
+.services .box-container .box .image .icons a:hover{
+    background: #c09f9a;
+}
+
+.services .box-container .box .content{
+    padding:2rem;
+    text-align:center;
+}
+
+.services .box-container .box .content h3{
+    font-size:2.5rem;
+    color:rgb(212, 131, 131);
+}
 
 
 
