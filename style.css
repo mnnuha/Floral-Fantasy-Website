@@ -638,6 +638,8 @@ header .fa-bars{
 
 } 
 
+/*BENEFITS SECTION*/
+
 .icons-container{
     background: #eee;
     display: flex;
@@ -663,12 +665,13 @@ header .fa-bars{
 
 .icons-container .icons h3{
     color: #333;
-    padding-bottom: 5rem;
+    padding-bottom: .5rem;
     font-size: 1.5rem;
 }
 
 .icons-container .icons span{
     color: #555;
+    padding-bottom: .5rem;
     font-size: 1.3rem;
 }
 
