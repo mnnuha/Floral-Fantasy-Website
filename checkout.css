@@ -1,0 +1,490 @@
+:root{
+    --pink:#e9a4ce; 
+}
+
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+    outline: none; border: none;
+    text-decoration: none;
+    transition: 0.2s linear;
+    user-select: none;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+section{
+    padding:2rem 9%;
+    position:relative;
+    z-index: 1;
+}
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 0.5rem;
+    margin: 2rem 0;
+    background: rgba(225, 51, 153, .05);
+}
+
+.heading span{
+    color: #cd5d76;
+}
+
+header{
+    position: fixed;
+    top:0; left:0; right:0;
+    background:#fff;
+    padding:2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
+}
+
+header .logo{
+    font-size: 3rem;
+    color: #333;
+    font-weight: bolder;
+}
+
+header .logo span{
+    color:var(--pink);
+}
+
+header .navigation-bar a{
+    font-size: 3rem;
+    padding:0 1.5rem;
+    color: #666;
+}
+
+header .navigation-bar a:hover{
+    color:var(--pink);
+}
+
+header .icons a{
+    font-size: 2rem;
+    color:#333;
+    margin-left: 1.5rem;
+}
+
+header .icons a:hover{
+    color:var(--pink);
+}
+
+header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    cursor: pointer;
+    border:.1rem solid rgba(0,0,0,.3);
+    display: none;
+}
+
+/*FLOWER ARRANGEMENT SECTION*/
+
+.flower_arrangements {
+    background: #f9f0f2;
+    padding-top: 100px;
+}
+
+.flower_arrangements .heading{
+    margin-top:3rem ;
+    margin-bottom:4rem;
+}
+.flower_arrangements .arrangement-video {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.flower_arrangements video {
+    width: 100%;
+    max-width: 600px; 
+    border-radius: 10px;
+}
+
+.flower_arrangements .ftext {
+    text-align: center;
+}
+
+.flower_arrangements .ftext p {
+    font-size: 2.5em;
+    color: #555;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/*EVENTS SECTION*/
+
+.events {
+    background: #f9f0f2;
+}
+
+.events .heading{
+    margin-top:3rem ;
+    margin-bottom:4rem;
+}
+
+.events .events-video {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.events video {
+    width: 100%;
+    max-width: 600px; 
+    border-radius: 10px;
+}
+
+.events .etext {
+    text-align: center;
+}
+
+.events .etext p {
+    font-size: 2.5rem;
+    color: #444;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/*WORKSHOP SECTION*/
+
+.workshop {
+    background: #f9f0f2;
+}
+
+.workshop .heading{
+    margin-top:3rem ;
+    margin-bottom:4rem;
+}
+
+.workshop .workshop-video {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.workshop video {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.workshop .wtext {
+    text-align: center;
+}
+
+.workshop .wtext p {
+    font-size: 2.5rem;
+    color: #666;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+}
+
+/*FOOTER SECTION*/
+
+.footer {
+    background-color: #eee; 
+    color: #000000; 
+    padding: 2rem; 
+    text-align: center; 
+    
+}
+
+
+.footer .box-container {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 2rem; 
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto; 
+    padding-top: 2rem;
+    
+        
+}
+
+.footer h3 {
+    margin-bottom: 4rem; 
+    font-size: 3rem; 
+    color: #000000; 
+}
+
+.footer a {
+    color: #000000; 
+    text-decoration: none; 
+    display: block; 
+    margin-bottom: 0.5rem;
+    font-size:2.5rem;
+}
+
+.footer a:hover {
+    color: #a85b5b; 
+}
+
+
+.footer .quick.links {
+    flex: 1 1 20rem; 
+}
+
+.footer .map {
+    flex: 1 1 30rem; 
+}
+
+.footer .map iframe {
+    width: 100%; 
+    height: 250px; 
+    border: 0; 
+    border-radius: 8px; 
+}
+
+
+.footer .contact.info {
+    flex: 1 1 20rem; 
+}
+
+.footer .contact.info a {
+    display: block; 
+    margin-bottom: 0.5rem; 
+}
+
+.footer .social.icons {
+    margin-top: 1rem; 
+}
+
+.footer .social.icons i{
+    font-size: 4rem;
+    vertical-align: middle;
+    transform:none;
+}
+.footer .social.icons a {
+    color: #a85b5b; 
+    margin: 0 0.5rem; 
+    font-size: 3rem; 
+    display:inline-block;
+    text-decoration: none; 
+}
+
+.footer .social.icons a:hover {
+    color: #c09f9a; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MEDIA QUERIES*/
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding:2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+    .flower_arrangements{
+        margin-top:3rem;
+    }
+
+    .flower_arrangements .heading,
+    .events .heading,
+    .workshop .heading{
+        font-size:2.5rem;
+        margin:3rem 6rem;
+               
+    }
+
+    .flower_arrangements .ftext p,
+    .events .etext p,
+    .workshop .wtext p{
+        font-size:2rem;
+    }  
+    
+    .flower_arrangements video,
+    .events video, 
+    .workshop video {
+        max-width: 90%;
+    }
+
+    .flower_arrangements,
+    .events,
+    .workshop {
+        padding-top:90px;
+    }
+    
+    .footer .box-container{
+        gap:1rem;
+    }
+}
+
+@media (max-width:768px){
+
+    header .fa-bars{
+        display:block;
+    }
+
+    header .navigation-bar{
+        position:absolute;
+        top:100%; left: 0; right: 0;
+        background: #eee;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header #toggler:checked~.navigation-bar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navigation-bar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff;
+        border: 1rem solid rgba(0,0,0,.1);
+        display: block;
+         
+    }
+    
+    .flower_arrangements{
+        margin-top:4rem;
+    }
+       
+       
+
+    .flower_arrangements .heading,
+    .events .heading,
+    .workshop .heading{
+        font-size:2rem;
+        margin:2rem 6rem;
+       
+    }
+
+    .flower_arrangements .ftext p,
+    .events .etext p,
+    .workshop .wtext p{
+        font-size:1.8rem;
+    }  
+    
+    .flower_arrangements video,
+    .events video, 
+    .workshop video {
+        max-width: 100%;
+    }
+
+    .flower_arrangements,
+    .events,
+    .workshop {
+        padding-top:80px;
+    }
+
+    .footer h3{
+        font-size: 2.5rem;
+        margin-top:1.8rem
+    }
+
+    .footer a{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    } 
+
+    .heading{
+        font-size: 3rem;
+    }
+
+    .flower_arrangements{
+        margin-top:4rem;
+    }
+       
+    .flower_arrangements.heading,
+    .events .heading,
+    .workshop .heading{
+        font-size:2.5rem;
+        margin:1.5rem 6rem;
+        
+    }
+
+    .flower_arrangements .ftext p,
+    .events .etext p,
+    .workshop .wtext p{
+        font-size:2rem;
+    }  
+    
+    .flower_arrangements video,
+    .events video, 
+    .workshop video {
+        max-width: 100%;
+    }
+
+    .flower_arrangements,
+    .events,
+    .workshop {
+        padding-top:60px;
+    }
+
+    .footer{
+        padding:1rem;
+    }
+
+    .footer h3{
+        font-size:2.5rem;
+        margin-top: 1.8rem;
+       
+    }
+
+    .footer a{
+        font-size:2rem;
+    }
+    
+}
+

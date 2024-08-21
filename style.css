@@ -692,70 +692,70 @@ header .fa-bars{
 .footer {
     background-color: #eee; 
     color: #000000; 
-    padding: 2rem; /* Padding around the footer content */
-    text-align: center; /* Center text in the footer */
+    padding: 2rem; 
+    text-align: center; 
     margin-top: 50px;
 }
 
 
 .footer .box-container {
-    display: flex; /* Flexbox for layout */
-    flex-wrap: wrap; /* Wrap items to new lines */
-    gap: 2rem; /* Gap between items */
-    justify-content: space-between; /* Distribute items with space between */
-    max-width: 1400px; /* Max width of the footer container */
-    margin: 0 auto; /* Center the container */
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 2rem; 
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto; 
     padding-top: 2rem;
     
         
 }
 
 .footer h3 {
-    margin-bottom: 4rem; /* Space below headings */
-    font-size: 3rem; /* Font size for headings */
-    color: #000000; /* White color for headings */
+    margin-bottom: 4rem; 
+    font-size: 3rem; 
+    color: #000000; 
 }
 
 .footer a {
-    color: #000000; /* Link color */
-    text-decoration: none; /* Remove underline from links */
-    display: block; /* Block display for links */
-    margin-bottom: 0.5rem; /* Space between links */
+    color: #000000; 
+    text-decoration: none; 
+    display: block; 
+    margin-bottom: 0.5rem;
     font-size:2.5rem;
 }
 
 .footer a:hover {
-    color: #a85b5b; /* Change color on hover */
+    color: #a85b5b; 
 }
 
-/* Styling for quick links section */
+
 .footer .quick.links {
-    flex: 1 1 20rem; /* Flex basis for quick links */
+    flex: 1 1 20rem; 
 }
 
 .footer .map {
-    flex: 1 1 30rem; /* Flex basis for map */
+    flex: 1 1 30rem; 
 }
 
 .footer .map iframe {
-    width: 100%; /* Full width */
-    height: 250px; /* Height of the map */
-    border: 0; /* Remove border */
-    border-radius: 8px; /* Rounded corners for the map */
+    width: 100%; 
+    height: 250px; 
+    border: 0; 
+    border-radius: 8px; 
 }
 
-/* Styling for contact info section */
+
 .footer .contact.info {
-    flex: 1 1 20rem; /* Flex basis for contact info */
+    flex: 1 1 20rem; 
 }
 
 .footer .contact.info a {
-    display: block; /* Block display for contact info */
-    margin-bottom: 0.5rem; /* Space between items */
+    display: block; 
+    margin-bottom: 0.5rem; 
 }
 
 .footer .social.icons {
-    margin-top: 1rem; /* Space above social icons */
+    margin-top: 1rem; 
 }
 
 .footer .social.icons i{
@@ -764,15 +764,15 @@ header .fa-bars{
     transform:none;
 }
 .footer .social.icons a {
-    color: #a85b5b; /* Color of social icons */
-    margin: 0 0.5rem; /* Space between icons */
-    font-size: 3rem; /* Size of social icons */
+    color: #a85b5b; 
+    margin: 0 0.5rem; 
+    font-size: 3rem; 
     display:inline-block;
-    text-decoration: none; /* Remove underline from icons */
+    text-decoration: none; 
 }
 
 .footer .social.icons a:hover {
-    color: #c09f9a; /* Change color on hover */
+    color: #c09f9a; 
 }
 
 
