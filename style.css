@@ -589,30 +589,36 @@ header .fa-bars{
     flex-wrap: wrap;
     gap: 1.5rem;
     justify-content: space-between;
+    align-items: stretch;
+    margin:0;
 }
 
 .contact .row form{
-    flex:1 1 40rem;
+    flex:1 1 30rem;
     padding: 2rem 2.5rem;
     box-shadow: 0.2rem 0.4rem 0.5rem rgb(0, 0, 0, 0.1); 
     border: 0.5rem solid rgb(0, 0, 0, 0.1);
     background: white;
     border-radius: 0.5rem; 
+       
 }
 
 .contact .row .image{
-    flex: 1 1 40rem;
+    flex: 1 1 30rem;
     text-align: right;
-    border-radius: 15px 50px 30px;
-
+    overflow:hidden;
+    /*border-radius:60px 60px 60px 60px;*/
+    
 }
 
 .contact .row .image img{
-    width: 70%;
-    margin: 30px 0; 
-    display:inline-block;
-    padding-right: 30px;
-    border-radius: 2px 2px; 
+    width: 100%;
+    object-fit: cover;
+    margin: 10px 0;
+    /*border: 10px solid black;*/
+    
+    margin-left:40px; 
+
 }
 
 .contact .row form .box{
@@ -637,7 +643,7 @@ header .fa-bars{
     font-size: 1.9rem;
     height:15rem;
     resize: none;
-    margin-bottom: 2rem;
+    margin-bottom:2rem;
 
 } 
 
@@ -650,6 +656,7 @@ header .fa-bars{
     gap: 1.5rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
+    margin-top:30px;
 }
 
 .icons-container .icons{
@@ -679,14 +686,94 @@ header .fa-bars{
 }
 
 
+/*FOOTER SECTION*/
 
 
+.footer {
+    background-color: #eee; 
+    color: #000000; 
+    padding: 2rem; /* Padding around the footer content */
+    text-align: center; /* Center text in the footer */
+    margin-top: 50px;
+}
 
 
+.footer .box-container {
+    display: flex; /* Flexbox for layout */
+    flex-wrap: wrap; /* Wrap items to new lines */
+    gap: 2rem; /* Gap between items */
+    justify-content: space-between; /* Distribute items with space between */
+    max-width: 1400px; /* Max width of the footer container */
+    margin: 0 auto; /* Center the container */
+    padding-top: 2rem;
+    
+        
+}
 
+.footer h3 {
+    margin-bottom: 4rem; /* Space below headings */
+    font-size: 3rem; /* Font size for headings */
+    color: #000000; /* White color for headings */
+}
 
+.footer a {
+    color: #000000; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+    display: block; /* Block display for links */
+    margin-bottom: 0.5rem; /* Space between links */
+    font-size:2.5rem;
+}
 
+.footer a:hover {
+    color: #a85b5b; /* Change color on hover */
+}
 
+/* Styling for quick links section */
+.footer .quick.links {
+    flex: 1 1 20rem; /* Flex basis for quick links */
+}
+
+.footer .map {
+    flex: 1 1 30rem; /* Flex basis for map */
+}
+
+.footer .map iframe {
+    width: 100%; /* Full width */
+    height: 250px; /* Height of the map */
+    border: 0; /* Remove border */
+    border-radius: 8px; /* Rounded corners for the map */
+}
+
+/* Styling for contact info section */
+.footer .contact.info {
+    flex: 1 1 20rem; /* Flex basis for contact info */
+}
+
+.footer .contact.info a {
+    display: block; /* Block display for contact info */
+    margin-bottom: 0.5rem; /* Space between items */
+}
+
+.footer .social.icons {
+    margin-top: 1rem; /* Space above social icons */
+}
+
+.footer .social.icons i{
+    font-size: 4rem;
+    vertical-align: middle;
+    transform:none;
+}
+.footer .social.icons a {
+    color: #a85b5b; /* Color of social icons */
+    margin: 0 0.5rem; /* Space between icons */
+    font-size: 3rem; /* Size of social icons */
+    display:inline-block;
+    text-decoration: none; /* Remove underline from icons */
+}
+
+.footer .social.icons a:hover {
+    color: #c09f9a; /* Change color on hover */
+}
 
 
 /*MEDIA QUERIES*/
@@ -737,13 +824,31 @@ header .fa-bars{
         flex-direction: column;
     }
 
-    .contact .row .image img{
-        width:80%;
-        margin: 20px 0;
+    .contact .row .imageg{
+       display:none;
     }
 
     .contact .row form{
         flex: 1 1 100%;
+        padding: 1rem;
+    }
+
+    .icons-container{
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .icons:nth-child(3){
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .icons-container .icons h3{
+        font-size: 1.8rem;
+    }
+
+    .footer .box-container{
+        gap:1rem;
     }
 }
 
@@ -797,25 +902,51 @@ header .fa-bars{
 
     .contact .row form .box{
         font-size: 1.5rem;
-        padding:0.8rem;
+        padding: 1rem;
     }
 
     .contact .row form textarea{
         font-size: 1.5rem;
     }
 
-    .contact .row .image img{
-        width: 90%;
+    .contact .row .image {
+       display:none;
     }
 
     .icons-container .icons h3{
         font-size: 2rem;
     }
+
+    .icons-conatiner .icons{
+        padding: 1.5rem;
+    }
     
     .icons-container .icons span{
-        font-size: 1.7rem;
+        font-size: 1.5rem;
+    }
+
+    .icons-conatiner{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icons:nth-child(3){
+        margin-left:auto;
+        margin-right:auto;
+        width:100%;
+        text-align:center;
+    }
+
+    .footer h3{
+        font-size: 2.5rem;
+        margin-top:1.8rem
+    }
+
+    .footer a{
+        font-size: 2rem;
     }
 }
+
 
 @media (max-width:450px){
 
@@ -828,7 +959,7 @@ header .fa-bars{
     }
 
     .contact .row form .box{
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         padding: 0.6rem;
     }
 
@@ -836,7 +967,44 @@ header .fa-bars{
         font-size:1.3rem;
     }
 
-    .contact .row .image img{
-        width: 100%;
+    .contact .row .image {
+        display:none;
+    }
+
+    .icons-container .icons{
+        padding: 1rem;
+    }
+
+    .icons-container .icons h3{
+        font-size: 1.5rem;
+    }
+
+    .icons-container .icons span{
+        font-size: 1.3rem;
+    }
+
+    .icons-container{
+        align-items: center;
+    }
+
+    .icons:nth-child(3){
+        margin-left:auto;
+        margin-right:auto;
+        width:100%;
+        text-align:center;
+    }
+
+    .footer{
+        padding:1rem;
+    }
+
+    .footer h3{
+        font-size:2.5rem;
+        margin-top: 1.8rem;
+       
+    }
+
+    .footer a{
+        font-size:2rem;
     }
 }
