@@ -319,7 +319,7 @@ header .fa-bars{
 }
 
 .hero-image .text span{
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: rgb(255, 255, 255);
     padding:1rem 0;
     line-height: 1.5;
@@ -328,7 +328,7 @@ header .fa-bars{
 
 
 .hero-image .text p{
-    font-size: 25px;
+    font-size: 2.5rem;
     color: rgb(255, 255, 255);
     padding:1rem 0;
     line-height: 1.5;
@@ -379,7 +379,7 @@ header .fa-bars{
 }
 
 .story .row .content p{
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     color: #999;
     padding: .5rem 0;
     padding-top: 1rem;
@@ -438,11 +438,14 @@ header .fa-bars{
     position:absolute;
     bottom:-7rem; left:0; right:0;
     display: flex;
+    justify-content: center;
+    align-items: center;
     transition:bottom 0.3s ease;
 }
 
 .products .box-container .box:hover .image .icons{
     bottom:0;
+   
 
 }
 
